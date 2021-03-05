@@ -22,6 +22,7 @@ body {
   border-radius: 5px;
   z-index: 0;
   box-shadow: 0 20px 30px rgba(7, 55, 122, 0.5);
+  overflow: hidden;
 }
 
 input {
@@ -40,4 +41,41 @@ input {
   letter-spacing: 0.5px;
   z-index: 2;
   padding-left: 40px;
+}
+
+#lock {
+  position: absolute;
+  color: #c5c5c5;
+  width: 28px;
+  transform: translate(0, -50%);
+  top: 50%;
+  left: 8px;
+}
+
+#bulb-wrapper {
+  background-color: #ffffff;
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+#open,
+#close {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0.5px;
+  width: 25px;
+}
+
+#open {
+  display: none;
 }
